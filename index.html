@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MemorySpire — Games, Production Tools &amp; Digital Assets</title>
+<meta name="description" content="MemorySpire is an independent studio focused on games, production tools, and digital assets. Simple by default. Modular by design. Powerful by choice.">
+<style>
+  :root{
+    --bg: #0d0d0f;
+    --text: #f2e8d2;
+    --accent: #e8c675;
+    --muted: #86868c;
+    --line: #232326;
+  }
+
+  *{ box-sizing: border-box; }
+
+  html, body{
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8vh 24px;
+  }
+
+  .content{
+    max-width: 620px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Mark */
+  .mark{
+    width: 78px;
+    height: auto;
+    margin: 0 auto 36px;
+    display: block;
+    opacity: 0;
+    transform: translateY(6px);
+    animation: rise 0.7s ease-out 0.1s forwards;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .mark{ animation: none; opacity: 1; transform: none; }
+  }
+
+  @keyframes rise{
+    to{ opacity: 1; transform: translateY(0); }
+  }
+
+  .wordmark{
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    margin: 0 0 22px;
+  }
+
+  .philosophy{
+    font-size: 19px;
+    line-height: 1.6;
+    color: var(--accent);
+    margin: 0 0 22px;
+    font-weight: 400;
+  }
+
+  .description{
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text);
+    opacity: 0.85;
+    margin: 0 0 40px;
+  }
+
+  .divider{
+    width: 48px;
+    height: 1px;
+    background: var(--line);
+    margin: 0 auto 36px;
+  }
+
+  .links{
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+  }
+
+  .links a{
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease, color 0.2s ease;
+  }
+
+  .links a:hover,
+  .links a:focus-visible{
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+
+  .links a:focus-visible{
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
+
+  footer{
+    text-align: center;
+    padding: 24px;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+  }
+
+  footer a{
+    color: var(--muted);
+    text-decoration: none;
+  }
+
+  footer a:hover,
+  footer a:focus-visible{
+    color: var(--accent);
+  }
+</style>
+</head>
+<body>
+
+<main>
+  <div class="content">
+
+    <svg class="mark" viewBox="0 0 1950 1300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MemorySpire mark">
+      <circle cx="975" cy="298" r="15" fill="#e8c675"/>
+      <polygon points="975,352 1140,838 810,838" fill="#e8c675"/>
+      <line x1="975" y1="352" x2="975" y2="838" stroke="#0d0d0f" stroke-width="4"/>
+      <rect x="822" y="866" width="306" height="7" rx="3.5" fill="#e8c675"/>
+    </svg>
+
+    <h1 class="wordmark">MEMORYSPIRE</h1>
+
+    <p class="philosophy">Simple by default. Modular by design. Powerful by choice.</p>
+
+    <p class="description">
+      MemorySpire is an independent studio focused on games, production tools,
+      and digital assets. We believe good products should be simple to use,
+      modular to extend, and built to last.
+    </p>
+
+    <div class="divider"></div>
+
+    <nav class="links" aria-label="Profiles">
+      <a href="https://www.artstation.com/onyxon/albums/10011812" target="_blank" rel="noopener">ArtStation</a>
+      <a href="https://www.linkedin.com/in/serghei-marusceac-a45a862aa/" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+
+  </div>
+</main>
+
+<footer>
+  <!-- Replace with your preferred contact address -->
+  <a href="mailto:contact@memoryspire.com">contact@memoryspire.com</a>
+  &nbsp;·&nbsp; © 2026 MemorySpire
+</footer>
+
+</body>
+</html>
